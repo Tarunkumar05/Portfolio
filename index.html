@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd27a858e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h5>Hello, I'm</h5>
+            <h1><span>Tarun Kumar</span></h1>
+            <p class="animated-text">Python Developer</p>
+            <br>
+            <h6>A python enthusiast and Full Stack Developer,
+            <br> turning ideas into reality with elegant code.</h6>
+            
+        </div>
+
+    </div>
+
+</div>
+<!-----------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/tarun.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I recently completed my Bachelor's degree in Technology and have acquired strong skills in Python development,
+                     particularly in the Django framework. Along with Django, I am proficient in HTML, CSS, Bootstrap, and Git, which are essential technologies for web development.
+                      I have hands-on experience in building web applications, creating responsive layouts, and implementing effective version control with Git.
+                       With my technical expertise and educational background, I am eager to contribute my skills as a Python Django developer and make valuable contributions to your team.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span></li>
+                        <li><span>Django</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>Javascript</span></li>
+                        <li><span>Bootstrap</span></li>
+                        <li><span>Git & Github</span></li>
+                        <li><span>SQL</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span>03/2022-05/2022</span><br>Frontend Developer intern at Eniacworld Media</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>B.Tech at Rajasthan Technical University,Kota</li>
+                        <li><span>2017-2018</span><br>Maheshwari Public Schoo,jaipur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As a web designer, I specialize in creating captivating and user-friendly websites.
+                     With a blend of HTML, CSS, and JavaScript skills, I craft visually appealing layouts that leave a lasting impression.
+                      Let's collaborate to bring your ideas to life and build a stunning online presence that stands out in the digital world. </p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Development with Django</h2>
+                <p>As a skilled web developer, I bring ideas to life through coding and creativity.
+                     My expertise in Python, Django, HTML, and CSS enables me to build dynamic and interactive websites with seamless functionality.
+                      I am passionate about crafting efficient and scalable solutions to meet clients' needs.
+                       With a strong foundation in Git and GitHub, I ensure smooth version control and collaboration throughout the development process
+                     Let's work together to transform your vision into a fully functional and engaging web application.</p>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!----------portfolio--------->
+<div id="portfolio">
+    <div class="Container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work" onclick="openLightbox([
+                { src: 'images/social1.png', alt: 'Social Media App - Description 1' },
+                { src: 'images/social2.png', alt: 'Social Media App - Description 2' },
+                { src: 'images/social3.png', alt: 'Social Media App - Description 3' }
+            ], 0)">
+                <img src="images/social1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The "Social App" is a Python Django web application that emulates a social media platform. It allows users to create accounts,
+                         log in, and share pictures with captions. 
+                        Users can also like and comment on other users' posts.
+                         The app includes features for profile customization and has an admin interface for efficient database management.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" onclick="openLightbox([
+            { src: 'images/cv1.png', alt: 'Social Media App - Description 1' },
+            { src: 'images/cv2.png', alt: 'Social Media App - Description 2' },
+            ], 0)">
+                <img src="images/cv1.png">
+                <div class="layer">
+                    <h3>CV Generator</h3>
+                    <p>The "CV Generator" is a Django web app that simplifies CV creation. Users input their info,
+                         and it generates a stylish and well-organized CV with key details highlighted.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="modal">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="modal-content">
+        <img id="lightboxImage" src="" alt="">
+        <span class="prev" onclick="prevImage()">&#10094;</span>
+        <span class="next" onclick="nextImage()">&#10095;</span>
+    </div>
+</div>
+
+<!------------contact-------------->
+
+<div id="contact">
+    <div class="containe">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:tkumar9587@gmail.com"><i class="fa-solid fa-envelope"></a></i>tkumar9587@gmail.com</p>
+                <p><a href="tel:8094818991"><i class="fa-solid fa-phone"></a></i>8094818991</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tarun-kumar-749125214/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007672384026"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/tarun_0510/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Tarunkumar05"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxu2ooee5_mWObZANMV05Im6ax7toD_FSEpaEWQ63YSvpdIo-NG24QFFjmy_AnEe6KuEg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+
+    // Close the lightbox
+    function closeLightbox() {
+        var lightboxModal = document.getElementById("lightboxModal");
+        lightboxModal.style.display = "none";
+    }
+
+    // Show the next image in the lightbox
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % imagesArray.length;
+        showImage(currentIndex);
+    }
+
+    // Show the previous image in the lightbox
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+        showImage(currentIndex);
+    }
+
+    function openLightbox(imagesArray, initialIndex) {
+        var lightboxModal = document.getElementById("lightboxModal");
+        var lightboxImage = document.getElementById("lightboxImage");
+        var currentIndex = initialIndex;
+
+        function showImage(index) {
+            lightboxImage.src = imagesArray[index].src;
+            lightboxImage.alt = imagesArray[index].alt;
+            currentIndex = index;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % imagesArray.length;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+            showImage(currentIndex);
+        }
+
+        var closeBtn = document.getElementsByClassName("close")[0];
+        closeBtn.onclick = function () {
+            lightboxModal.style.display = "none";
+        };
+
+        lightboxModal.style.display = "block";
+        showImage(currentIndex);
+
+        // Close the lightbox if user clicks outside the image
+        window.onclick = function(event) {
+            if (event.target == lightboxModal) {
+                lightboxModal.style.display = "none";
+            }
+        };
+
+        var prevBtn = document.getElementsByClassName("prev")[0];
+        prevBtn.onclick = prevImage;
+
+        var nextBtn = document.getElementsByClassName("next")[0];
+        nextBtn.onclick = nextImage;
+    }
+</script>
+    
+</body>
+</html>
