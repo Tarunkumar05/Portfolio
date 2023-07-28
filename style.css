@@ -491,59 +491,59 @@ nav .fas{
     }
 
     #portfolio {
-        padding: 100px 20px; /* Adjust the left and right padding for small screens */
+        padding: 100px 20px; /
         margin-top: -50px;
 
     }
 
     .work-list {
-        /* Center the items and create equal spacing on both sides */
+        
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
     }
 
     .work {
-        /* Set a new width for .work on small screens */
+        
         width: 100%;
     }
 
     .work img {
-        /* Set a new width for .work img on small screens */
+        
         width: 100%;
     }
 
     .layer {
-        /* Set new font size and padding for .layer on small screens */
+        
         font-size: 10px;
         padding: 0 20px;
     }
 
     .layer h3 {
-        /* Set new font size for .layer h3 on small screens */
+        
         font-size: 14px;
     }
 
     .layer a {
-        /* Set new font size and padding for .layer a on small screens */
+
         font-size: 10px;
         padding: 8px 20px;
     }
 
     .work:hover img {
-        /* Set a new scale value for .work:hover img on small screens */
+        
         transform: scale(1.05);
     }
 
     layer a i {
-        font-size: 40px; /* You can adjust this value as per your preference */
+        font-size: 40px; 
     }
 
     /* Adjust the circle around the icon */
     .layer a {
-        width: 30px; /* Adjust the width for the circle */
-        height: 30px; /* Adjust the height for the circle */
-        line-height: 10px; /* Adjust the line height for the circle */
+        width: 30px; 
+        height: 30px; 
+        line-height: 10px; 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -574,7 +574,7 @@ nav .fas{
     }
 
     .contact-right form .btn2 {
-        margin-left: 70px; /* You can adjust this value as per your preference */
+        margin-left: 70px; 
     }
 
     form input,
