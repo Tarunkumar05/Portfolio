@@ -3,324 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal-Portfolio</title>
+    <title>Tarun Kumar Bairwa — Frontend Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd27a858e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
+
+<!-- Noise overlay -->
+<div class="noise"></div>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">TKB</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" data-text="About">About</a></li>
+            <li><a href="#experience" data-text="Experience">Experience</a></li>
+            <li><a href="#skills" data-text="Skills">Skills</a></li>
+            <li><a href="#projects" data-text="Projects">Projects</a></li>
+            <li><a href="#contact" data-text="Contact">Contact</a></li>
+            <i class="fas fa-times" id="close-menu"></i>
+        </ul>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+        <i class="fas fa-bars" id="open-menu"></i>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+        <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            Available for opportunities
+        </div>
+        <h1 class="hero-title reveal">
+            <span class="line">Frontend</span>
+            <span class="line accent">Engineer</span>
+        </h1>
+        <p class="hero-sub reveal">
+            2+ years building real products. Not just interfaces — <em>experiences</em>.<br>
+            Currently deep in collaborative workspace tech at <strong>VirtualStation</strong>.
+        </p>
+        <div class="hero-actions reveal">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="#about" class="btn-ghost">About Me <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats reveal">
+            <div class="stat">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Years Exp.</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Product Built</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Ownership</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
     <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            
-            <h5>Hello, I'm</h5>
-            <h1><span>Tarun Kumar</span></h1>
-            <p class="animated-text">Frontend Developer</p>
-            <br>
-            <h6>Enthusiastic Frontend Developer,
-            <br> turning ideas into reality with elegant code.</h6>
-            
+        <div class="section-label reveal">01 — About</div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <h2 class="section-title">
+                    I build products, <br><span class="accent">not just code.</span>
+                </h2>
+                <p class="about-body">
+                    I'm a Frontend Engineer with over 2 years of hands-on experience working on a real-world product — <strong>VirtualStation</strong> — inside a startup. I don't just implement tickets; I think about user experience, performance, scalability, and product direction.
+                </p>
+                <p class="about-body">
+                    My strength lies in building complex, interactive UIs — canvas systems, real-time interactions, avatar-based features — the kind of work that demands deep technical thinking and a sharp product eye.
+                </p>
+                <p class="about-body">
+                    I'm based in India and excited about opportunities where I can take real ownership and make real impact.
+                </p>
+                <div class="about-links">
+                    <a href="images/Resume.pdf" download class="btn-primary">Download Resume</a>
+                    <a href="https://github.com/Tarunkumar05" target="_blank" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tarun-kumar-749125214/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="about-card-area reveal">
+                <div class="about-card">
+                    <div class="card-chip">Core Traits</div>
+                    <ul class="trait-list">
+                        <li><span class="trait-icon">◆</span> Startup-minded, ownership-driven</li>
+                        <li><span class="trait-icon">◆</span> Product thinker, not just coder</li>
+                        <li><span class="trait-icon">◆</span> Complex UI specialist (Canvas, Phaser.js)</li>
+                        <li><span class="trait-icon">◆</span> Fast learner, high adaptability</li>
+                        <li><span class="trait-icon">◆</span> Collaborative team contributor</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="footer-tag">React</span>
+                        <span class="footer-tag">TypeScript</span>
+                        <span class="footer-tag">Canvas</span>
+                        <span class="footer-tag">Electron</span>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">Product-Focused</div>
+                <div class="floating-badge badge-2">Startup Exp.</div>
+            </div>
         </div>
-
     </div>
+</section>
 
-</div>
-<!-----------about------------->
-<div id="about">
+<!-- Experience Section -->
+<section id="experience">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/tarun.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>  I recently earned my Bachelor's degree, specializing in frontend development with a focus on HTML, CSS, JavaScript, Bootstrap, React, and Git/GitHub. I possess hands-on experience in crafting web applications, designing responsive layouts, and implementing effective version control. Excited to leverage my technical skills as a Frontend Developer and contribute to your team's success</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('internship')">Internship</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
+        <div class="section-label reveal">02 — Experience</div>
+        <h2 class="section-title reveal">Where I've <span class="accent">built things</span></h2>
+        <div class="timeline">
 
-                        <li><span>HTML</span></li>
-                        <li><span>CSS</span></li>
-                        <li><span>SASS</span></li>
-                        <li><span>JavaScript</span></li>
-                        <li><span>TypeScript</span></li>
-                        <li><span>Bootstrap</span></li>
-                        <li><span>React.JS</span></li>
-                        <li><span>Git & Github</span></li>
-                        
-                    </ul>
+            <div class="timeline-item reveal current">
+                <div class="timeline-meta">
+                    <span class="timeline-date">2023 — Present</span>
+                    <span class="timeline-tag">Current</span>
                 </div>
-                <div class="tab-contents" id="internship">
-                    <ul>
-                        <li><span>03/2022-05/2024</span><br>Frontend Developer intern at Eniacworld Media</li>
-                        <li><span>06/2024-08/2024</span><br>Frontend Engineer intern at WebKalakaar Software Private Limited </li>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Frontend Engineer</h3>
+                        <span class="company">VirtualStation · Product Startup</span>
+                    </div>
+                    <p class="timeline-desc">Core frontend contributor on a collaborative virtual workspace platform. Worked as an early-stage engineer — not just executing tasks, but shaping product direction, improving UX, and taking ownership of complex features.</p>
+                    <ul class="timeline-bullets">
+                        <li>Built and maintained canvas-based interactive workspace features</li>
+                        <li>Implemented avatar movement and real-time UI interactions using Phaser.js</li>
+                        <li>Developed scalable, reusable component systems in React + TypeScript</li>
+                        <li>Contributed to performance optimization for smooth UX at scale</li>
+                        <li>Participated in product-level decisions alongside the founding team</li>
+                        <li>Built desktop app features using Electron.js</li>
                     </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2019-2023</span><br>B.Tech at Rajasthan Technical University,Kota</li>
-                        <li><span>2017-2018</span><br>Maheshwari Public Schoo,jaipur</li>
-                    </ul>
+                    <div class="timeline-tech">
+                        <span>React</span><span>TypeScript</span><span>Canvas API</span>
+                        <span>Phaser.js</span><span>Electron.js</span><span>Redux</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Jun — Aug 2024</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Frontend Developer</h3>
+                        <span class="company">Webkalakaar Pvt. Ltd.</span>
+                    </div>
+                    <p class="timeline-desc">Developed production landing pages for Webkalakaar and VirtualStation. Focused on building responsive, animated UIs that convert.</p>
+                    <ul class="timeline-bullets">
+                        <li>Built responsive landing pages with smooth animations</li>
+                        <li>Implemented cross-browser compatible, mobile-first layouts</li>
+                    </ul>
+                    <div class="timeline-tech">
+                        <span>HTML</span><span>SCSS</span><span>Bootstrap</span><span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Mar 2022 — May 2024</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Frontend Developer Intern</h3>
+                        <span class="company">Eniac World Pvt. Ltd.</span>
+                    </div>
+                    <p class="timeline-desc">Early industry exposure working on UI components and frontend tasks. Built the foundations of professional frontend engineering practice.</p>
+                    <div class="timeline-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-meta">
+                    <span class="timeline-date">2019 — 2023</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>B.Tech — Computer Science</h3>
+                        <span class="company">Rajasthan Technical University, Kota</span>
+                    </div>
+                    <p class="timeline-desc">Built strong foundations in computer science while actively developing real-world web development skills alongside coursework.</p>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
-<!-------------services------------>
-<div id="services">
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>As a web designer, I specialize in creating captivating and user-friendly websites.
-                     With a blend of HTML, CSS, and JavaScript skills, I craft visually appealing layouts that leave a lasting impression.
-                      Let's collaborate to bring your ideas to life and build a stunning online presence that stands out in the digital world. </p>
-                
+        <div class="section-label reveal">03 — Skills</div>
+        <h2 class="section-title reveal">What I <span class="accent">work with</span></h2>
+        <div class="skills-grid">
+            <div class="skill-group reveal">
+                <div class="skill-group-title">
+                    <i class="fa-solid fa-layer-group"></i> Frontend Core
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">React.js</span>
+                    <span class="skill-tag primary">TypeScript</span>
+                    <span class="skill-tag primary">JavaScript ES6+</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3 / SCSS</span>
+                    <span class="skill-tag">React Redux</span>
+                    <span class="skill-tag">React Router</span>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>Web Development with Django</h2>
-                <p>As a skilled web developer, I bring ideas to life through coding and creativity.
-                     My expertise in Python, Django, HTML, and CSS enables me to build dynamic and interactive websites with seamless functionality.
-                      I am passionate about crafting efficient and scalable solutions to meet clients' needs.
-                       With a strong foundation in Git and GitHub, I ensure smooth version control and collaboration throughout the development process
-                     Let's work together to transform your vision into a fully functional and engaging web application.</p>
-                
+            <div class="skill-group reveal">
+                <div class="skill-group-title">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Advanced / Unique
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">Phaser.js</span>
+                    <span class="skill-tag primary">Canvas API</span>
+                    <span class="skill-tag primary">Electron.js</span>
+                    <span class="skill-tag">Interactive UI</span>
+                    <span class="skill-tag">Real-time Systems</span>
+                </div>
             </div>
-            
+            <div class="skill-group reveal">
+                <div class="skill-group-title">
+                    <i class="fa-solid fa-cubes"></i> UI & Libraries
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Ant Design</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Chart.js</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <div class="skill-group-title">
+                    <i class="fa-solid fa-gear"></i> Tools & Workflow
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">NPM</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Figma (reading)</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<!----------portfolio--------->
-<div id="portfolio">
-    <div class="Container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work" onclick="openLightbox([
-                { src: 'images/social1.png', alt: 'Social Media App - Description 1' },
-                { src: 'images/social2.png', alt: 'Social Media App - Description 2' },
-                { src: 'images/social3.png', alt: 'Social Media App - Description 3' }
-            ], 0)">
-                <img src="images/social1.png">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The "Social App" is a Python Django web application that emulates a social media platform. It allows users to create accounts,
-                         log in, and share pictures with captions. 
-                        Users can also like and comment on other users' posts.
-                         The app includes features for profile customization and has an admin interface for efficient database management.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work" onclick="openLightbox([
-                { src: 'images/ev1.png', alt: 'My Events - Description 1' },
-                { src: 'images/ev2.png', alt: 'My Events - Description 2' },
-                { src: 'images/ev3.png', alt: 'My Events - Description 3' },
-                { src: 'images/ev4.png', alt: 'My Events - Description 1' },
-                { src: 'images/ev5.png', alt: 'My Events - Description 2' },
-                { src: 'images/ev6.png', alt: 'My Events - Description 3' },
-                { src: 'images/ev7.png', alt: 'My Events - Description 1' },
-                { src: 'images/ev8.png', alt: 'My Events - Description 2' },
-                { src: 'images/ev9.png', alt: 'My Events - Description 3' }
-            ], 0)">
-                <img src="images/ev1.png">
-                <div class="layer">
-                    <h3>My Events</h3>
-                    <p>I am excited to present "My Events," a dynamic and user-friendly event management website that allows users to discover and explore a wide range of exciting events happening in their city.
-                         This project showcases my proficiency in web development, design, and user experience enhancement.
-                        Key Features:-Event Discovery, Location-Based Search, Date & Category Filtering, Visually Engaging, User Profiles, Responsive Design.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+</section>
 
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <div class="section-label reveal">04 — Projects</div>
+        <h2 class="section-title reveal">Things I've <span class="accent">shipped</span></h2>
 
-            <div class="work" onclick="openLightbox([
-            { src: 'images/cv1.png', alt: 'CV - Description 1' },
-            { src: 'images/cv2.png', alt: 'CV - Description 2' },
-            ], 0)">
-                <img src="images/cv1.png">
-                <div class="layer">
-                    <h3>CV Generator</h3>
-                    <p>The "CV Generator" is a Django web app that simplifies CV creation. Users input their info,
-                         and it generates a stylish and well-organized CV with key details highlighted.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- Hero Project -->
+        <div class="project-hero reveal">
+            <div class="project-hero-label">Featured Project</div>
+            <div class="project-hero-inner">
+                <div class="project-hero-content">
+                    <div class="project-number">01</div>
+                    <h3>VirtualStation</h3>
+                    <p class="project-type">Collaborative Virtual Workspace Platform</p>
+                    <p class="project-desc">
+                        A real-time collaborative workspace platform that enables distributed teams to work together in virtual spaces. I worked as a core frontend engineer for 2+ years, contributing to everything from canvas-based room systems to avatar interactions and real-time UI — not as a contractor, but as a product builder.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Canvas-based interactive workspace rooms</li>
+                        <li>Avatar movement system with Phaser.js</li>
+                        <li>Real-time UI interactions and collaboration features</li>
+                        <li>Desktop application via Electron.js</li>
+                        <li>Scalable component architecture</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span>React</span><span>TypeScript</span><span>Canvas API</span>
+                        <span>Phaser.js</span><span>Electron.js</span><span>Redux</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://virtualstation.app" target="_blank" class="btn-primary sm">Visit Product <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-hero-visual">
+                    <div class="vs-mockup">
+                        <div class="mockup-bar">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="mockup-url">virtualstation.app</span>
+                        </div>
+                        <div class="mockup-screen">
+                            <div class="vs-canvas">
+                                <div class="vs-room room-1">
+                                    <span>Dev Room</span>
+                                    <div class="avatar av1"></div>
+                                    <div class="avatar av2"></div>
+                                </div>
+                                <div class="vs-room room-2">
+                                    <span>Design</span>
+                                    <div class="avatar av3"></div>
+                                </div>
+                                <div class="vs-room room-3"><span>Lounge</span></div>
+                                <div class="vs-toolbar">
+                                    <div class="tool-btn active"></div>
+                                    <div class="tool-btn"></div>
+                                    <div class="tool-btn"></div>
+                                    <div class="tool-btn"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </div>
-        
-    </div>
-</div>
 
-<!-- Lightbox Modal -->
-<div id="lightboxModal" class="modal">
-    <span class="close" onclick="closeLightbox()">&times;</span>
-    <div class="modal-content">
-        <img id="lightboxImage" src="" alt="">
-        <span class="prev" onclick="prevImage()">&#10094;</span>
-        <span class="next" onclick="nextImage()">&#10095;</span>
-    </div>
-</div>
+        <!-- Other Projects Grid -->
+        <div class="projects-grid">
 
-<!------------contact-------------->
-
-<div id="contact">
-    <div class="containe">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><a href="mailto:tkumar9587@gmail.com"><i class="fa-solid fa-envelope"></a></i>tkumar9587@gmail.com</p>
-                <p><a href="tel:8094818991"><i class="fa-solid fa-phone"></a></i>8094818991</p>
-
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/tarun-kumar-749125214/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100007672384026"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/tarun_0510/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/Tarunkumar05"><i class="fa-brands fa-github"></i></a>
-                    
+            <div class="project-card reveal">
+                <div class="project-card-header">
+                    <span class="project-num-small">02</span>
+                    <div class="project-card-icons">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
                 </div>
-                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                <h3>Dashboard & Order Management</h3>
+                <p>A data-rich admin dashboard with order management capabilities. Built with React and Chart.js, featuring dynamic data visualizations, filtering, and order workflow management — designed for real operational use.</p>
+                <div class="project-card-tech">
+                    <span>React</span><span>TypeScript</span><span>Chart.js</span><span>Ant Design</span><span>Redux</span>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+
+            <div class="project-card reveal">
+                <div class="project-card-header">
+                    <span class="project-num-small">03</span>
+                    <div class="project-card-icons">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                </div>
+                <h3>React TaskFlow</h3>
+                <p>A Kanban-style task management application with drag-and-drop support, task prioritization, and team assignment features. Focused on smooth UX and real-time state management.</p>
+                <div class="project-card-tech">
+                    <span>React</span><span>TypeScript</span><span>Redux</span><span>SCSS</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="section-label reveal">05 — Contact</div>
+        <div class="contact-grid">
+            <div class="contact-left reveal">
+                <h2 class="section-title">Let's <span class="accent">work together</span></h2>
+                <p class="contact-sub">
+                    I'm open to new opportunities — full-time roles, product-focused teams, and challenging frontend problems. If you're building something real and need someone who takes ownership, let's talk.
+                </p>
+                <div class="contact-info">
+                    <a href="mailto:tkumar9587@gmail.com" class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-val">tkumar9587@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:8094818991" class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-val">+91 8094818991</span>
+                        </div>
+                    </a>
+                    <div class="contact-item no-link">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <span class="contact-val">Jaipur, Rajasthan, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/tarun-kumar-749125214/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Tarunkumar05" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/tarun_0510/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007672384026" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="contact-right reveal">
+                <form name="submit-to-google-sheet" class="contact-form">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="Name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="Email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="Message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <span id="msg"></span>
                 </form>
-                <span id="msg"></span>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <span class="footer-logo">TKB</span>
+            <span class="footer-text">Designed & Built by Tarun Kumar Bairwa</span>
+            <span class="footer-copy">© 2025</span>
+        </div>
+    </div>
+</footer>
 
 <script>
+// ─── Navbar scroll behavior ───
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+// ─── Mobile menu ───
+document.getElementById('open-menu').addEventListener('click', () => {
+    document.getElementById('nav-links').classList.add('open');
+});
+document.getElementById('close-menu').addEventListener('click', () => {
+    document.getElementById('nav-links').classList.remove('open');
+});
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('nav-links').classList.remove('open');
+    });
+});
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+// ─── Scroll reveal ───
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
-</script>
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-<script>
+// ─── Contact form ───
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxu2ooee5_mWObZANMV05Im6ax7toD_FSEpaEWQ63YSvpdIo-NG24QFFjmy_AnEe6KuEg/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
 
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px"
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxu2ooee5_mWObZANMV05Im6ax7toD_FSEpaEWQ63YSvpdIo-NG24QFFjmy_AnEe6KuEg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
+if (form) {
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = 'Sending...';
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(() => {
+                msg.innerHTML = '✓ Message sent successfully!';
+                btn.textContent = 'Send Message';
+                btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+                setTimeout(() => msg.innerHTML = '', 5000);
+                form.reset();
+            })
+            .catch(err => {
+                msg.innerHTML = 'Something went wrong. Please try again.';
+                btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+                console.error('Error!', err.message);
+            });
+    });
+}
 
-<script>
-
-    // Close the lightbox
-    function closeLightbox() {
-        var lightboxModal = document.getElementById("lightboxModal");
-        lightboxModal.style.display = "none";
-    }
-
-    // Show the next image in the lightbox
-    function nextImage() {
-        currentIndex = (currentIndex + 1) % imagesArray.length;
-        showImage(currentIndex);
-    }
-
-    // Show the previous image in the lightbox
-    function prevImage() {
-        currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
-        showImage(currentIndex);
-    }
-
-    function openLightbox(imagesArray, initialIndex) {
-        var lightboxModal = document.getElementById("lightboxModal");
-        var lightboxImage = document.getElementById("lightboxImage");
-        var currentIndex = initialIndex;
-
-        function showImage(index) {
-            lightboxImage.src = imagesArray[index].src;
-            lightboxImage.alt = imagesArray[index].alt;
-            currentIndex = index;
-        }
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % imagesArray.length;
-            showImage(currentIndex);
-        }
-
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
-            showImage(currentIndex);
-        }
-
-        var closeBtn = document.getElementsByClassName("close")[0];
-        closeBtn.onclick = function () {
-            lightboxModal.style.display = "none";
-        };
-
-        lightboxModal.style.display = "block";
-        showImage(currentIndex);
-
-        // Close the lightbox if user clicks outside the image
-        window.onclick = function(event) {
-            if (event.target == lightboxModal) {
-                lightboxModal.style.display = "none";
-            }
-        };
-
-        var prevBtn = document.getElementsByClassName("prev")[0];
-        prevBtn.onclick = prevImage;
-
-        var nextBtn = document.getElementsByClassName("next")[0];
-        nextBtn.onclick = nextImage;
-    }
+// ─── Avatar animation on VS mockup ───
+function animateAvatars() {
+    const avatars = document.querySelectorAll('.avatar');
+    avatars.forEach(av => {
+        const moveX = (Math.random() - 0.5) * 20;
+        const moveY = (Math.random() - 0.5) * 10;
+        av.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+}
+setInterval(animateAvatars, 1800);
 </script>
-    
+
 </body>
 </html>
