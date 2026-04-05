@@ -3,514 +3,562 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarun Kumar Bairwa — Frontend Engineer</title>
+    <meta name="description" content="Tarun Kumar Bairwa - Frontend Engineer specializing in React.js, TypeScript, and modern web applications">
+    <title>Tarun Kumar Bairwa | Frontend Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/bd27a858e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-<!-- Noise overlay -->
-<div class="noise"></div>
-
-<!-- Navigation -->
-<nav id="navbar">
-    <div class="nav-inner">
-        <a href="#hero" class="nav-logo">TKB</a>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#about" data-text="About">About</a></li>
-            <li><a href="#experience" data-text="Experience">Experience</a></li>
-            <li><a href="#skills" data-text="Skills">Skills</a></li>
-            <li><a href="#projects" data-text="Projects">Projects</a></li>
-            <li><a href="#contact" data-text="Contact">Contact</a></li>
-            <i class="fas fa-times" id="close-menu"></i>
-        </ul>
-        <a href="#contact" class="nav-cta">Let's Talk</a>
-        <i class="fas fa-bars" id="open-menu"></i>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
     </div>
-</nav>
 
-<!-- Hero Section -->
-<section id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-content">
-        <div class="hero-badge reveal">
-            <span class="badge-dot"></span>
-            Available for opportunities
-        </div>
-        <h1 class="hero-title reveal">
-            <span class="line">Frontend</span>
-            <span class="line accent">Engineer</span>
-        </h1>
-        <p class="hero-sub reveal">
-            2+ years building real products. Not just interfaces — <em>experiences</em>.<br>
-            Currently deep in collaborative workspace tech at <strong>VirtualStation</strong>.
-        </p>
-        <div class="hero-actions reveal">
-            <a href="#projects" class="btn-primary">View My Work</a>
-            <a href="#about" class="btn-ghost">About Me <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="hero-stats reveal">
-            <div class="stat">
-                <span class="stat-num">2+</span>
-                <span class="stat-label">Years Exp.</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-                <span class="stat-num">1</span>
-                <span class="stat-label">Product Built</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-                <span class="stat-num">∞</span>
-                <span class="stat-label">Ownership</span>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">TK</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
-    <div class="hero-scroll-hint">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-    </div>
-</section>
+    </nav>
 
-<!-- About Section -->
-<section id="about">
-    <div class="container">
-        <div class="section-label reveal">01 — About</div>
-        <div class="about-grid">
-            <div class="about-text reveal">
-                <h2 class="section-title">
-                    I build products, <br><span class="accent">not just code.</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Tarun Kumar Bairwa</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typed-text"></span>
+                    <span class="cursor">|</span>
                 </h2>
-                <p class="about-body">
-                    I'm a Frontend Engineer with over 2 years of hands-on experience working on a real-world product — <strong>VirtualStation</strong> — inside a startup. I don't just implement tickets; I think about user experience, performance, scalability, and product direction.
+                <p class="hero-description">
+                    I build fast, scalable, and user-friendly web applications using React.js, TypeScript, and modern UI frameworks. 
+                    Passionate about creating pixel-perfect interfaces and seamless user experiences.
                 </p>
-                <p class="about-body">
-                    My strength lies in building complex, interactive UIs — canvas systems, real-time interactions, avatar-based features — the kind of work that demands deep technical thinking and a sharp product eye.
-                </p>
-                <p class="about-body">
-                    I'm based in India and excited about opportunities where I can take real ownership and make real impact.
-                </p>
-                <div class="about-links">
-                    <a href="images/Resume.pdf" download class="btn-primary">Download Resume</a>
-                    <a href="https://github.com/Tarunkumar05" target="_blank" class="icon-link"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/tarun-kumar-749125214/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Let's Talk</span>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Tarunkumar05" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tarun-kumar-749125214/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:tkumar9587@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <div class="about-card-area reveal">
-                <div class="about-card">
-                    <div class="card-chip">Core Traits</div>
-                    <ul class="trait-list">
-                        <li><span class="trait-icon">◆</span> Startup-minded, ownership-driven</li>
-                        <li><span class="trait-icon">◆</span> Product thinker, not just coder</li>
-                        <li><span class="trait-icon">◆</span> Complex UI specialist (Canvas, Phaser.js)</li>
-                        <li><span class="trait-icon">◆</span> Fast learner, high adaptability</li>
-                        <li><span class="trait-icon">◆</span> Collaborative team contributor</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span class="footer-tag">React</span>
-                        <span class="footer-tag">TypeScript</span>
-                        <span class="footer-tag">Canvas</span>
-                        <span class="footer-tag">Electron</span>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
                     </div>
-                </div>
-                <div class="floating-badge badge-1">Product-Focused</div>
-                <div class="floating-badge badge-2">Startup Exp.</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience">
-    <div class="container">
-        <div class="section-label reveal">02 — Experience</div>
-        <h2 class="section-title reveal">Where I've <span class="accent">built things</span></h2>
-        <div class="timeline">
-
-            <div class="timeline-item reveal current">
-                <div class="timeline-meta">
-                    <span class="timeline-date">2023 — Present</span>
-                    <span class="timeline-tag">Current</span>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Frontend Engineer</h3>
-                        <span class="company">VirtualStation · Product Startup</span>
+                    <div class="code-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">'Tarun Kumar'</span>,
+  <span class="code-property">role</span>: <span class="code-string">'Frontend Engineer'</span>,
+  <span class="code-property">skills</span>: [<span class="code-string">'React'</span>, <span class="code-string">'TypeScript'</span>],
+  <span class="code-property">passion</span>: <span class="code-string">'Building amazing UIs'</span>
+};</code></pre>
                     </div>
-                    <p class="timeline-desc">Core frontend contributor on a collaborative virtual workspace platform. Worked as an early-stage engineer — not just executing tasks, but shaping product direction, improving UX, and taking ownership of complex features.</p>
-                    <ul class="timeline-bullets">
-                        <li>Built and maintained canvas-based interactive workspace features</li>
-                        <li>Implemented avatar movement and real-time UI interactions using Phaser.js</li>
-                        <li>Developed scalable, reusable component systems in React + TypeScript</li>
-                        <li>Contributed to performance optimization for smooth UX at scale</li>
-                        <li>Participated in product-level decisions alongside the founding team</li>
-                        <li>Built desktop app features using Electron.js</li>
-                    </ul>
-                    <div class="timeline-tech">
-                        <span>React</span><span>TypeScript</span><span>Canvas API</span>
-                        <span>Phaser.js</span><span>Electron.js</span><span>Redux</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item reveal">
-                <div class="timeline-meta">
-                    <span class="timeline-date">Jun — Aug 2024</span>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Frontend Developer</h3>
-                        <span class="company">Webkalakaar Pvt. Ltd.</span>
-                    </div>
-                    <p class="timeline-desc">Developed production landing pages for Webkalakaar and VirtualStation. Focused on building responsive, animated UIs that convert.</p>
-                    <ul class="timeline-bullets">
-                        <li>Built responsive landing pages with smooth animations</li>
-                        <li>Implemented cross-browser compatible, mobile-first layouts</li>
-                    </ul>
-                    <div class="timeline-tech">
-                        <span>HTML</span><span>SCSS</span><span>Bootstrap</span><span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item reveal">
-                <div class="timeline-meta">
-                    <span class="timeline-date">Mar 2022 — May 2024</span>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Frontend Developer Intern</h3>
-                        <span class="company">Eniac World Pvt. Ltd.</span>
-                    </div>
-                    <p class="timeline-desc">Early industry exposure working on UI components and frontend tasks. Built the foundations of professional frontend engineering practice.</p>
-                    <div class="timeline-tech">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item reveal">
-                <div class="timeline-meta">
-                    <span class="timeline-date">2019 — 2023</span>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>B.Tech — Computer Science</h3>
-                        <span class="company">Rajasthan Technical University, Kota</span>
-                    </div>
-                    <p class="timeline-desc">Built strong foundations in computer science while actively developing real-world web development skills alongside coursework.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills">
-    <div class="container">
-        <div class="section-label reveal">03 — Skills</div>
-        <h2 class="section-title reveal">What I <span class="accent">work with</span></h2>
-        <div class="skills-grid">
-            <div class="skill-group reveal">
-                <div class="skill-group-title">
-                    <i class="fa-solid fa-layer-group"></i> Frontend Core
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag primary">React.js</span>
-                    <span class="skill-tag primary">TypeScript</span>
-                    <span class="skill-tag primary">JavaScript ES6+</span>
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3 / SCSS</span>
-                    <span class="skill-tag">React Redux</span>
-                    <span class="skill-tag">React Router</span>
-                </div>
-            </div>
-            <div class="skill-group reveal">
-                <div class="skill-group-title">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i> Advanced / Unique
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag primary">Phaser.js</span>
-                    <span class="skill-tag primary">Canvas API</span>
-                    <span class="skill-tag primary">Electron.js</span>
-                    <span class="skill-tag">Interactive UI</span>
-                    <span class="skill-tag">Real-time Systems</span>
-                </div>
-            </div>
-            <div class="skill-group reveal">
-                <div class="skill-group-title">
-                    <i class="fa-solid fa-cubes"></i> UI & Libraries
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Ant Design</span>
-                    <span class="skill-tag">Bootstrap</span>
-                    <span class="skill-tag">Chart.js</span>
-                    <span class="skill-tag">Responsive Design</span>
-                </div>
-            </div>
-            <div class="skill-group reveal">
-                <div class="skill-group-title">
-                    <i class="fa-solid fa-gear"></i> Tools & Workflow
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Git & GitHub</span>
-                    <span class="skill-tag">NPM</span>
-                    <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">Figma (reading)</span>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <div class="scroll-down">
+            <span></span>
+        </div>
+    </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <div class="section-label reveal">04 — Projects</div>
-        <h2 class="section-title reveal">Things I've <span class="accent">shipped</span></h2>
-
-        <!-- Hero Project -->
-        <div class="project-hero reveal">
-            <div class="project-hero-label">Featured Project</div>
-            <div class="project-hero-inner">
-                <div class="project-hero-content">
-                    <div class="project-number">01</div>
-                    <h3>VirtualStation</h3>
-                    <p class="project-type">Collaborative Virtual Workspace Platform</p>
-                    <p class="project-desc">
-                        A real-time collaborative workspace platform that enables distributed teams to work together in virtual spaces. I worked as a core frontend engineer for 2+ years, contributing to everything from canvas-based room systems to avatar interactions and real-time UI — not as a contractor, but as a product builder.
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a <strong>Frontend Engineer</strong> with hands-on experience in building fast, scalable, and 
+                        user-friendly web applications. I specialize in <strong>React.js</strong>, <strong>TypeScript</strong>, 
+                        and modern UI frameworks.
                     </p>
-                    <ul class="project-highlights">
-                        <li>Canvas-based interactive workspace rooms</li>
-                        <li>Avatar movement system with Phaser.js</li>
-                        <li>Real-time UI interactions and collaboration features</li>
-                        <li>Desktop application via Electron.js</li>
-                        <li>Scalable component architecture</li>
-                    </ul>
-                    <div class="project-tech-row">
-                        <span>React</span><span>TypeScript</span><span>Canvas API</span>
-                        <span>Phaser.js</span><span>Electron.js</span><span>Redux</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://virtualstation.app" target="_blank" class="btn-primary sm">Visit Product <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="project-hero-visual">
-                    <div class="vs-mockup">
-                        <div class="mockup-bar">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                            <span class="mockup-url">virtualstation.app</span>
+                    <p class="about-text">
+                        Currently working at <strong>WebKalakaar Pvt Ltd</strong> on <strong>VirtualStation</strong>, 
+                        where I've contributed to building a comprehensive remote work ecosystem with real-time 
+                        collaborative features, reducing canvas lag by <strong>35%</strong> through optimization.
+                    </p>
+                    <p class="about-text">
+                        I'm skilled in converting Figma designs into pixel-perfect UI, optimizing performance, and 
+                        building reusable component systems. I'm passionate about creating clean, intuitive user 
+                        experiences for high-growth products.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Maintainable & scalable</p>
+                            </div>
                         </div>
-                        <div class="mockup-screen">
-                            <div class="vs-canvas">
-                                <div class="vs-room room-1">
-                                    <span>Dev Room</span>
-                                    <div class="avatar av1"></div>
-                                    <div class="avatar av2"></div>
-                                </div>
-                                <div class="vs-room room-2">
-                                    <span>Design</span>
-                                    <div class="avatar av3"></div>
-                                </div>
-                                <div class="vs-room room-3"><span>Lounge</span></div>
-                                <div class="vs-toolbar">
-                                    <div class="tool-btn active"></div>
-                                    <div class="tool-btn"></div>
-                                    <div class="tool-btn"></div>
-                                    <div class="tool-btn"></div>
-                                </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Performance</h4>
+                                <p>Optimized & fast</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-palette"></i>
+                            <div>
+                                <h4>Pixel Perfect</h4>
+                                <p>Figma to code</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Other Projects Grid -->
-        <div class="projects-grid">
-
-            <div class="project-card reveal">
-                <div class="project-card-header">
-                    <span class="project-num-small">02</span>
-                    <div class="project-card-icons">
-                        <i class="fa-solid fa-chart-line"></i>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="stat-number">1.5+</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 class="stat-number">10+</h3>
+                        <p class="stat-label">Projects Built</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="stat-number">35%</h3>
+                        <p class="stat-label">Performance Boost</p>
                     </div>
                 </div>
-                <h3>Dashboard & Order Management</h3>
-                <p>A data-rich admin dashboard with order management capabilities. Built with React and Chart.js, featuring dynamic data visualizations, filtering, and order workflow management — designed for real operational use.</p>
-                <div class="project-card-tech">
-                    <span>React</span><span>TypeScript</span><span>Chart.js</span><span>Ant Design</span><span>Redux</span>
-                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card reveal">
-                <div class="project-card-header">
-                    <span class="project-num-small">03</span>
-                    <div class="project-card-icons">
-                        <i class="fa-solid fa-list-check"></i>
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Career Journey</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">June 2024 - Present</span>
+                        <h3>Frontend Engineer</h3>
+                        <h4>VirtualStation (WebKalakaar Pvt Ltd)</h4>
+                        <p class="company-description">
+                            Working on VirtualStation - a comprehensive remote work ecosystem including time tracking, 
+                            project management, AI assistant, and collaboration tools.
+                        </p>
+                        <ul class="achievement-list">
+                            <li>Built real-time interactive dashboards and collaborative canvas features using React.js, WebSockets, Excalidraw, and Phaser.js</li>
+                            <li>Optimized rendering logic, reducing real-time canvas lag by <strong>35%</strong> and improving collaboration smoothness</li>
+                            <li>Developed reusable UI components (typography, forms, navigation) ensuring consistency and scalability</li>
+                            <li>Integrated RESTful APIs and WebSocket connections with Node.js backend</li>
+                            <li>Designed and developed the VirtualStation product website with responsive layouts and animations</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>React.js</span>
+                            <span>TypeScript</span>
+                            <span>WebSockets</span>
+                            <span>Phaser.js</span>
+                            <span>Redux</span>
+                        </div>
                     </div>
                 </div>
-                <h3>React TaskFlow</h3>
-                <p>A Kanban-style task management application with drag-and-drop support, task prioritization, and team assignment features. Focused on smooth UX and real-time state management.</p>
-                <div class="project-card-tech">
-                    <span>React</span><span>TypeScript</span><span>Redux</span><span>SCSS</span>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">March 2022 - May 2022</span>
+                        <h3>Frontend Developer Intern</h3>
+                        <h4>Eniac World Pvt Ltd</h4>
+                        <ul class="achievement-list">
+                            <li>Built and optimized responsive web pages using HTML, CSS (SCSS), and Bootstrap</li>
+                            <li>Contributed to UI/UX improvements by implementing reusable components</li>
+                            <li>Collaborated with senior developers in Agile environment</li>
+                            <li>Gained practical experience in Git/GitHub workflows and code reviews</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3/SCSS</span>
+                            <span>Bootstrap</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2023</span>
+                        <h3>Bachelor of Technology</h3>
+                        <h4>Rajasthan Technical University, Kota</h4>
+                        <p class="company-description">
+                            CGPA: 7.5 | Focused on computer science fundamentals and web development
+                        </p>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <div class="section-label reveal">05 — Contact</div>
-        <div class="contact-grid">
-            <div class="contact-left reveal">
-                <h2 class="section-title">Let's <span class="accent">work together</span></h2>
-                <p class="contact-sub">
-                    I'm open to new opportunities — full-time roles, product-focused teams, and challenging frontend problems. If you're building something real and need someone who takes ownership, let's talk.
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Technical Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SCSS/SASS</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item featured">
+                            <span class="skill-name">React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Redux</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Context API</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Material UI</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Ant Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Electron.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Agile/Scrum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vercel</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Netlify</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Tools</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Copilot</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ChatGPT</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Claude</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Featured Work</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: VirtualStation -->
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="images/virtualstation.jpg" alt="VirtualStation">
+                        <div class="project-overlay">
+                            <a href="https://app.virtualstation.io/" target="_blank" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Featured Project</span>
+                        <h3>VirtualStation</h3>
+                        <p>
+                            A comprehensive remote work ecosystem with time tracking, project management, AI assistant, 
+                            and real-time collaboration tools. Built interactive dashboards and collaborative canvas features 
+                            with optimized performance.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>TypeScript</span>
+                            <span>WebSockets</span>
+                            <span>Phaser.js</span>
+                            <span>Redux</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://app.virtualstation.io/" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Dashboard -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/dashboard.jpg" alt="Dashboard and Order Management">
+                        <div class="project-overlay">
+                            <a href="https://juspay-dashboard-lyart.vercel.app/" target="_blank" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard & Order Management</h3>
+                        <p>
+                            A pixel-perfect, fully responsive dashboard with modern frontend architecture. Features include 
+                            search, filtering, sorting, pagination, and dark/light theme switching with smooth transitions 
+                            and microinteractions.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Context API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://juspay-dashboard-lyart.vercel.app/" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: TaskFlow -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/taskflow.jpg" alt="React TaskFlow">
+                        <div class="project-overlay">
+                            <a href="https://react-todo-manager-three.vercel.app/" target="_blank" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>React TaskFlow</h3>
+                        <p>
+                            A task management application built with React for efficient todo management. Features include 
+                            create, edit, complete, and delete todos with real-time updates. Uses Context API for state 
+                            management and local storage for data persistence.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Context API</span>
+                            <span>Local Storage</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://react-todo-manager-three.vercel.app/" target="_blank" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i> Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    I'm currently open to new opportunities. Whether you have a question or just want to say hi, 
+                    feel free to reach out!
                 </p>
+            </div>
+            <div class="contact-container">
                 <div class="contact-info">
-                    <a href="mailto:tkumar9587@gmail.com" class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div>
-                            <span class="contact-label">Email</span>
-                            <span class="contact-val">tkumar9587@gmail.com</span>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                    </a>
-                    <a href="tel:8094818991" class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div>
-                            <span class="contact-label">Phone</span>
-                            <span class="contact-val">+91 8094818991</span>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:tkumar9587@gmail.com">tkumar9587@gmail.com</a>
                         </div>
-                    </a>
-                    <div class="contact-item no-link">
-                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <div>
-                            <span class="contact-label">Location</span>
-                            <span class="contact-val">Jaipur, Rajasthan, India</span>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+918094818991">+91 8094818991</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Jaipur, Rajasthan, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Tarunkumar05" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tarun-kumar-749125214/" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:tkumar9587@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="social-row">
-                    <a href="https://www.linkedin.com/in/tarun-kumar-749125214/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Tarunkumar05" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/tarun_0510/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100007672384026" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <div class="contact-form">
+                    <form name="submit-to-google-sheet" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <span id="formMessage"></span>
+                    </form>
                 </div>
             </div>
-            <div class="contact-right reveal">
-                <form name="submit-to-google-sheet" class="contact-form">
-                    <div class="form-group">
-                        <label>Your Name</label>
-                        <input type="text" name="Name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email Address</label>
-                        <input type="email" name="Email" placeholder="john@company.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea name="Message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary full-width">
-                        Send Message <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-                    <span id="msg"></span>
-                </form>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="footer-inner">
-            <span class="footer-logo">TKB</span>
-            <span class="footer-text">Designed & Built by Tarun Kumar Bairwa</span>
-            <span class="footer-copy">© 2025</span>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tarun Kumar Bairwa. Designed & Built with <i class="fas fa-heart"></i></p>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script>
-// ─── Navbar scroll behavior ───
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-// ─── Mobile menu ───
-document.getElementById('open-menu').addEventListener('click', () => {
-    document.getElementById('nav-links').classList.add('open');
-});
-document.getElementById('close-menu').addEventListener('click', () => {
-    document.getElementById('nav-links').classList.remove('open');
-});
-document.querySelectorAll('#nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.getElementById('nav-links').classList.remove('open');
-    });
-});
-
-// ─── Scroll reveal ───
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-// ─── Contact form ───
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxu2ooee5_mWObZANMV05Im6ax7toD_FSEpaEWQ63YSvpdIo-NG24QFFjmy_AnEe6KuEg/exec';
-const form = document.forms['submit-to-google-sheet'];
-const msg = document.getElementById('msg');
-
-if (form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        const btn = form.querySelector('button[type="submit"]');
-        btn.textContent = 'Sending...';
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(() => {
-                msg.innerHTML = '✓ Message sent successfully!';
-                btn.textContent = 'Send Message';
-                btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
-                setTimeout(() => msg.innerHTML = '', 5000);
-                form.reset();
-            })
-            .catch(err => {
-                msg.innerHTML = 'Something went wrong. Please try again.';
-                btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
-                console.error('Error!', err.message);
-            });
-    });
-}
-
-// ─── Avatar animation on VS mockup ───
-function animateAvatars() {
-    const avatars = document.querySelectorAll('.avatar');
-    avatars.forEach(av => {
-        const moveX = (Math.random() - 0.5) * 20;
-        const moveY = (Math.random() - 0.5) * 10;
-        av.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    });
-}
-setInterval(animateAvatars, 1800);
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
